@@ -1,0 +1,260 @@
+:root {
+    --primary-color: #13283F;
+    --primary-color-alpha: #13283FCC;
+    --secondary-color: #3D81CB;
+    --white-color: #ffffff;
+    --borderRadius: 10px;
+} 
+
+/*Global Values*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
+
+    list-style-type: none;
+
+}
+
+section {
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 100px 80px;
+}
+
+/*Hero section*/
+#hero {
+    max-width: 1440px;
+    background-color: var(--primary-color-alpha);
+    opacity: 80%;   
+    color: white; 
+}
+
+.hero-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-logo-container {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1.5em;
+}
+
+.hero-logo-container .logo {
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    margin-right: 0.5em;
+}
+
+.hero-logo-container .logo-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-logo-container .logo-title .logo-title-main {
+    font-family: 'Alegreya SC', serif;
+    text-transform: uppercase;
+    letter-spacing: 2.0;
+    font-size: 2.0em;
+    font-weight: 700;
+}
+
+.hero-logo-container .logo-title .logo-title-sub {
+    line-height: 0.25;
+    font-family: 'Alegreya SC', serif;
+    font-size: 1.5em;
+}
+.hero-nav-list {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 1em;
+}
+
+.hero-nav-list .hero-nav-item {
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    margin: 1.5em;
+    font-size: 0.85em;
+}
+
+.hero-nav-list .hero-nav-item-btn {
+    background-color: transparent;
+    color: white;
+    border: 2px solid var(--secondary-color);
+}
+
+.hero-nav-item a:hover {
+    color: white;
+    background: none;
+}
+
+.hero-nav-item a:visited {
+    color: white;
+    background: none;
+}
+
+.hero-nav-item a:active {
+    color: white;
+    text-decoration: underline;
+}
+
+.hero-headline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 1em 0 0 0 ;
+}
+
+.hero-headline .hero-headline-main {
+    font-family: 'Alegreya SC', serif;
+    line-height: 100%;
+    text-transform: uppercase;
+    font-size: 400%;
+    max-width: 900px;
+    margin: 0.5em;
+}
+
+.hero-headline .hero-headline-sub {
+    max-width: 700px;   
+    font-size: 150%;
+    font-weight: 300;
+}
+
+.hero-headline .hero-btn {
+    background-color: transparent;
+    margin: 3em 0 4em 0;
+    color: white;
+    border: 2px solid var(--secondary-color);
+    padding: 1em 4em;
+    border-radius: 10px;
+}
+
+/*Quote Section*/
+
+#quote {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.quote-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-text {
+    margin: 1em;
+    font-style: italic;
+
+}
+
+.quote-text span {
+    display: block;
+}
+
+.quote-text .first {
+    justify-content: flex-start;
+    margin-right: 2em;
+}
+
+.quote-text .second {
+    justify-content: flex-end;
+    margin-left: 2em;
+}
+.quote-author {
+
+}
+
+#service {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+}
+
+.service-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+    font-size: 2em;
+}
+
+.service-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2.5em;
+}
+
+.service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 1em;
+}
+
+.service-item-icon {
+    width: 100px;   
+    height: 100px;
+    background-color: #999;
+}
+
+.service-item-heading {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.service-item-description {
+    margin: 1em 0;
+}
+
+.learn-more {
+    margin: 1em;
+}
+
+
+/*Question Section*/
+
+#question {
+    display: flex;
+    background-color: var(--secondary-color);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.question-container {
+    display: flex;
+    padding: 0.5em;
+}
+
+.question-heading {
+    justify-content: center;
+    align-items: center;
+    padding: 0.50em;
+    font-size: 1.25em;
+}
+
+.question-btn {
+    padding: 0.5em 1.5em;
+    border-radius: var(--borderRadius);
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-size: 1em;
+}
+
+

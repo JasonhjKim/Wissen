@@ -1,0 +1,494 @@
+:root {
+    --primary-color: #13283F;
+    --primary-color-alpha: #13283FCC;
+    --secondary-color: #3D81CB;
+    --white-color: #ffffff;
+    --borderRadius: 10px;
+} 
+
+/*Global Values*/
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+nav, ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    font-size: 100%;
+}
+
+section:not(#quote):not(#question) {
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+    padding: 3em 5em;
+}
+
+section h3.title {
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 2em;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.btn {
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    border-radius: var(--borderRadius);
+}
+
+
+/*Header Section*/
+
+header {
+    position: absolute;
+    width: 100%;
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+    padding: 35px 100px;
+    z-index: 1;
+    color: white;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav li {
+    margin: 0 1em;
+    padding: 0.5em 0.75em;
+    color: white;
+}
+
+header nav li a:visited {
+    color: white;
+}
+
+header nav li a:active {
+    text-decoration: underline;
+}
+
+header button {
+    padding: 0.5em 0.75em;
+}
+
+
+/*Hero Section*/
+
+#hero {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    text-align: center;
+    color: #fff;
+}
+
+.background-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color-alpha);
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    background: url("../img/harvard.jpg") center center fixed;
+    position: relative;
+    background-size: cover;
+    z-index: -1;
+}
+
+.hero-content {
+    z-index: 1;
+    margin-top: 3em;
+}
+
+.hero-content h1 {
+    text-transform: uppercase;
+    font-size: 3em;
+    text-overflow: ellipsis;
+    max-width: 750px;;
+    margin: 0 auto;
+    font-weight: 700;
+}
+
+.hero-content h4 {
+    font-size: 1em;
+    margin: 1em auto;
+    max-width: 600px;
+    font-weight: 400;
+}
+
+/*Quote Section*/
+#quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: #ffffffcc;
+}
+
+.quote-text {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em auto;
+    width: 17em;
+    font-size: 1em;
+    padding-right: 1em;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.quote-text .first {
+    align-self: flex-start
+}
+.quote-text .second {
+    align-self: flex-end
+}
+
+.quote-text .author {
+    display: block;
+    font-size: 0.75em;
+    align-self: flex-end
+}
+
+/*Service Section*/
+
+#service {
+
+}
+
+.service-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.service-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 25%;
+    margin: 2em 1em 2em 1em;
+}
+
+.service-item .service-item-icon {
+    height: 50px;
+    width: 50px;
+    background-color: #f9f9f9;
+    margin-bottom: 2.5em;
+}
+
+.service-item h5 {
+    font-weight: 400;
+    font-size: 1em;
+    text-align: left;
+    margin-bottom: 1em;
+}
+
+.service-item p {
+    font-weight: 300;
+    font-size: 0.85em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.service-item a {
+    font-size: 0.75em;
+    font-weight: 400;
+}
+
+/*Question Section*/
+
+#question {
+    background-color: var(--secondary-color);
+}
+
+#question .question-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+.question-content h4 {
+    text-align: center;
+    font-weight: 400;
+    color: white;
+    font-size: 1.25em;
+    margin-right: 1em;
+}
+
+.question-content button {
+    padding: 0.5em 2em;
+}
+
+/*Course Section*/
+
+#course {
+    display: flex;
+}
+
+#course .course-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.course-item-container:hover {
+    background-color: var(--secondary-color);
+    box-shadow: 3px 3px 9px 0 #7E7E7E;
+    transform: scale(1.01);
+    border: none;
+}
+
+.course-container .course-item-container:hover {
+    border:none;
+}
+
+.course-container .course-item-container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 45%;
+}
+
+.course-item-container .course-item-logo {
+    height: 75px;
+    width: 75px;
+    background-color: #f9f9f9;
+    margin: 3em 1em 2em 1em;
+    align-self: center;
+}
+
+.course-item-container h5 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+.course-item-container:nth-child(2n) {
+    border-left: #c9c9c9 1px solid;
+}
+
+.course-item-container:nth-child(-n+2) {
+    border-bottom: #c9c9c9 1px solid;
+}
+
+.course-item-container p {
+    max-width: 85%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 0.85em;
+    font-weight: 300;
+    margin-bottom: 2em;
+}
+
+.course-item-container a {
+    text-align: center;
+    font-size: 0.75em;
+    margin-bottom: 3em;
+}
+
+
+/*Testimonial section*/
+
+#testimonial {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2em;
+    font-weight: 300;
+}
+
+.testimonial-quote {
+    max-width: 75%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 0.95em;
+    font-style: italic;
+}
+
+.testimonial-author {
+    text-align: right;
+    font-size: 0.85em;
+    font-style: italic;
+    align-self: flex-end;
+}
+
+
+/*Instructor Section*/
+
+#instructor {
+    display: flex;
+    width: 100%;
+}
+
+#instructor .instructor-container {
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+#instructor .instructor-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#instructor .instructor-card {
+    background-color: var(--secondary-color);
+    margin: 1em 6em;
+    width: 320px;
+    border-radius: var(--borderRadius);
+    box-shadow: 3px 3px 9px 0 #7E7E7E;
+}
+
+.instructor-card .instructor-img {
+    width: 200px;
+    height: 200px;
+    margin: 4em 0 3em 0;
+    background-color: #f9f9f9;
+    border-radius: 100%;
+}
+
+.instructor-card p {
+    font-weight: 400;
+}
+
+.instructor-card .instructor-name {
+    margin-bottom: 0.5em;
+    font-size: 1.2em;
+}
+
+.instructor-card .instructor-title {
+    margin-bottom: 2em;
+    font-size: 1em;
+}
+
+.instructor-card ul{
+    width: 85%;
+    text-align: left;
+    margin-bottom: 2em;
+    margin-left: 1em
+}
+
+.instructor-achievement-container li {
+    margin: 1em;
+    font-size: 0.85em;
+    list-style-type: circle;
+
+}
+
+/*Footer Section*/
+#footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 300;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-container div {
+    flex-basis: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-container .footer-intro {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.footer-intro .intro-title span {
+    /* display: block; */
+}
+
+.intro-title .first {
+    font-size: 1.25em;
+}
+
+.intro-title .second {
+    font-size: 1.05em;
+}
+
+.footer-intro p {
+    width: 80%;
+    font-size: 0.85em;
+}
+
+.footer-nav{
+    justify-content: center;    
+}
+
+.footer-nav ul {
+    font-size: 0.85em;
+    text-align: center;
+
+}
+
+.footer-info {
+    justify-content: center;
+}
+
+.footer-info h4 {
+    padding-bottom: 1em;
+    font-size: 0.85em;
+}
+
+.footer-info li{
+    font-size: 0.85em;
+    padding: 0 0 0.85em 0.85em;
+}
+
+.footer-map .map {
+    width: auto;
+    height: auto;
+    background-color: #f9f9f9;
+}
+
+.footer-hr {
+    width: 100%;
+    margin: 1.5em 0;
+}
+
+.footer-copyright {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    font-size: 0.85em;
+}
+
+.footer-copyright a {
+    margin-left: 1em;
+}
